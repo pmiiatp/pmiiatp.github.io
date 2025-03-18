@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@theme {
+    --font-poppins: "Poppins", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+}
+
+@layer components {
+    .nav-active {
+        @apply bg-blue-700 font-semibold text-white md:bg-transparent md:text-blue-800;
+    }
+
+    .nav-item {
+        @apply text-gray-900 md:hover:text-blue-800;
+    }
+}

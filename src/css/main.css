@@ -1,0 +1,48 @@
+* {
+    /* border: 1px dotted black; */
+}
+
+.loading-screen {
+    position: fixed; /* Membuat elemen tetap di tempatnya */
+    top: 0;
+    left: 0;
+    width: 100%; /* Lebar penuh layar */
+    height: 100%; /* Tinggi penuh layar */
+    background-color: #f0f0f0; /* Warna latar belakang */
+    display: flex; /* Menggunakan flexbox untuk penempatan tengah */
+    justify-content: center; /* Pusatkan horizontal */
+    align-items: center; /* Pusatkan vertikal */
+    flex-direction: column; /* Susun elemen secara vertikal */
+    z-index: 1000; /* Pastikan loading screen di atas elemen lain */
+}
+.loading-screen div {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    border: 4px solid #0000;
+    border-radius: 50%;
+    border-color: #ccc #0000;
+    animation: l16 1s infinite linear;
+}
+.loading-screen div::before,
+.loading-screen div::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2px;
+    border: inherit;
+    border-radius: 50%;
+}
+.loading-screen div::before {
+    border-color: #f03355 #0000;
+    animation: inherit;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+}
+.loader::after {
+    margin: 8px;
+}
+@keyframes l16 {
+    100% {
+        transform: rotate(1turn);
+    }
+}

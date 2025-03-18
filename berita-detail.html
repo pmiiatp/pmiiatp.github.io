@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PMII AMIK Taruna Probolinggo</title>
+        <!-- Meta Tags -->
+        <meta name="description" content="Website Resmi Pergerakan Mahasiswa Islam Indonesia - AMIK Taruna Probolinggo" />
+        <meta name="keywords" content="PMII, PKPMII, Pergerakan Mahasiswa, Islam, Indonesia, AMIK Taruna Probolinggo, ATP" />
+        <meta name="author" content="MochYusuf" />
+        <!-- Favicons -->
+        <link rel="icon" type="image/png" href="./src/favicon/favicon.png" />
+        <link rel="apple-touch-icon" href="./src/favicon/apple-touch-icon.png" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="src/css/output.css" />
+        <link rel="stylesheet" href="./src/css/main.css" />
+    </head>
+    <body class="font-poppins bg-gray-50">
+        <nav id="navbar" class="fixed start-0 top-0 z-20 w-full border-gray-200 bg-transparent transition-all duration-1000">
+            <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-3">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="./src/img/pk-pmii-atp.png" class="h-16" alt="PMII Logo" />
+                </a>
+                <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 focus:outline-none md:hidden" aria-controls="navbar-dropdown" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                    <ul class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-transparent md:p-0">
+                        <li>
+                            <a href="index.html" class="nav-item block rounded-sm px-3 py-2 tracking-wider md:p-0">Beranda</a>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex w-full items-center justify-between rounded-sm px-3 py-2 tracking-wider text-gray-900 md:w-auto md:border-0 md:p-0 md:hover:text-blue-800">
+                                Profile
+                                <svg class="ms-2.5 h-2.5 w-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar" class="z-10 hidden w-44 divide-y divide-gray-100 rounded-lg bg-white font-normal shadow-sm">
+                                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="sambutan.html" class="block px-4 py-2 hover:bg-gray-100">Sambutan</a>
+                                    </li>
+                                    <li>
+                                        <a href="visi-misi.html" class="block px-4 py-2 hover:bg-gray-100">Visi & Misi</a>
+                                    </li>
+                                    <li>
+                                        <a href="sejarah.html" class="block px-4 py-2 hover:bg-gray-100">Sejarah PMII </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="produk-hukum.html" class="nav-item block rounded-sm px-3 py-2 tracking-wider md:border-0 md:p-0">Produk Hukum</a>
+                        </li>
+                        <li>
+                            <a href="galeri.html" class="nav-item block rounded-sm px-3 py-2 tracking-wider md:border-0 md:p-0">Galeri</a>
+                        </li>
+                        <li>
+                            <a href="struktur-organisasi.html" class="nav-item block rounded-sm px-3 py-2 tracking-wider md:border-0 md:p-0">Struktur Organisasi</a>
+                        </li>
+                        <li>
+                            <a href="berita.html" class="nav-active block rounded-sm px-3 py-2 tracking-wider md:border-0 md:p-0" aria-current="page">Berita</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mx-auto mt-20 px-2 py-7 md:px-6">
+            <div class="flex flex-col gap-8 md:flex-row">
+                <!-- Konten Berita -->
+                <div class="overflow-hidden rounded-lg bg-white p-5 shadow-lg md:w-2/3 md:p-8">
+                    <!-- Judul Berita -->
+                    <h1 class="mb-4 text-xl font-bold text-gray-800 md:text-3xl">Pelantikan Pengurus Baru PMII</h1>
+
+                    <!-- Tanggal dan Penulis -->
+                    <div class="mb-6 flex items-center text-sm text-gray-500">
+                        <span class="mr-4 text-xs md:text-base">15 Oktober 2023</span>
+                        <span class="text-xs md:text-base">Oleh: Admin PMII</span>
+                    </div>
+
+                    <!-- Gambar Berita -->
+                    <img src="src/img/berita-1.jpg" alt="Gambar Berita" class="mb-6 h-80 w-full rounded-lg object-cover" />
+
+                    <!-- Isi Berita -->
+                    <div class="leading-relaxed text-gray-700">
+                        <p class="mb-4">Pelantikan pengurus baru PMII telah dilaksanakan pada tanggal 15 Oktober 2023. Acara ini dihadiri oleh berbagai tokoh masyarakat dan mahasiswa. Pelantikan ini menandai dimulainya periode kepengurusan baru yang akan fokus pada peningkatan kualitas kader dan pengabdian masyarakat.</p>
+                        <p class="mb-4">Acara pelantikan dibuka dengan sambutan dari Ketua PMII periode sebelumnya, yang menyampaikan apresiasi atas kerja keras pengurus lama dan harapan untuk pengurus baru. Selanjutnya, pengurus baru dilantik secara resmi oleh Ketua Dewan Pembina PMII.</p>
+                        <p class="mb-4">Dalam sambutannya, Ketua PMII yang baru, Muhammad Abdullah Syukri, menyampaikan visi dan misi kepengurusan baru. Beliau menekankan pentingnya kolaborasi antar-kader dan peningkatan program yang berdampak langsung pada masyarakat.</p>
+                    </div>
+                </div>
+
+                <!-- Sidebar Kategori Berita -->
+                <div class="overflow-hidden rounded-lg bg-white p-6 shadow-lg md:w-1/3">
+                    <h2 class="mb-4 text-xl font-semibold text-gray-800">Kategori Berita</h2>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-gray-700 underline hover:text-blue-600">Kaderisasi</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-700 underline hover:text-blue-600">Kegiatan Sosial</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-700 underline hover:text-blue-600">Seminar & Workshop</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-700 underline hover:text-blue-600">Berita Nasional</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-700 underline hover:text-blue-600">Pengabdian Masyarakat</a>
+                        </li>
+                    </ul>
+
+                    <!-- Rekomendasi Berita -->
+                    <h2 class="mt-8 mb-4 text-xl font-semibold text-gray-800">Berita Terkait</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <img src="src/img/berita-2.jpg" alt="Berita 1" class="h-12 w-20 rounded-lg object-cover" />
+                            <div class="ml-3">
+                                <a href="#" class="text-sm text-gray-700 hover:text-blue-600 md:text-base">Workshop Kaderisasi PMII 2023</a>
+                                <p class="text-xs text-gray-500 md:text-sm">10 Oktober 2023</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="src/img/berita-3.jpg" alt="Berita 2" class="h-12 w-20 rounded-lg object-cover" />
+                            <div class="ml-3">
+                                <a href="#" class="text-sm text-gray-700 hover:text-blue-600 md:text-base">Seminar Nasional Kebangsaan</a>
+                                <p class="text-xs text-gray-500 md:text-sm">5 Oktober 2023</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="src/img/berita-4.jpg" alt="Berita 2" class="h-12 w-20 rounded-lg object-cover" />
+                            <div class="ml-3">
+                                <a href="#" class="text-sm text-gray-700 hover:text-blue-600 md:text-base">Seminar Nasional Kebangsaan</a>
+                                <p class="text-xs text-gray-500 md:text-sm">5 Oktober 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-gray-100 shadow-sm">
+            <div class="mx-auto w-full max-w-screen-xl py-3 md:p-4 md:py-8">
+                <div class="container mx-auto px-6 pt-10 md:flex md:justify-between">
+                    <div class="text-gray-700 md:w-1/3">
+                        <img src="src/img/pk-pmii-atp.png" alt="PMII Logo" class="mb-4" />
+                        <p class="text-sm leading-6">Website Resmi Pengurus Komisariat Pergerakan Mahasiswa Islam Indonesia Amik Taruna Probolinggo.</p>
+                    </div>
+
+                    <div class="mt-5 md:mt-0 md:w-1/4">
+                        <h3 class="mb-3 text-lg font-bold text-gray-900">Link Terkait</h3>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>
+                                <a href="index.html" class="underline transition hover:font-semibold hover:text-blue-600 md:no-underline md:hover:underline"> Beranda</a>
+                            </li>
+                            <li>
+                                <a href="sambutan.html" class="underline transition hover:font-semibold hover:text-blue-600 md:no-underline md:hover:underline">Sambutan</a>
+                            </li>
+                            <li>
+                                <a href="visi-misi.html" class="underline transition hover:font-semibold hover:text-blue-600 md:no-underline md:hover:underline"> Visi & Misi</a>
+                            </li>
+                            <li>
+                                <a href="sejarah.html" class="underline transition hover:font-semibold hover:text-blue-600 md:no-underline md:hover:underline">Sejarah PMII</a>
+                            </li>
+                            <li>
+                                <a href="produk-hukum.html" class="underline transition hover:font-semibold hover:text-blue-600 md:no-underline md:hover:underline">Produk Hukum</a>
+                            </li>
+                            <li>
+                                <a href="struktur-organisasi.html" class="underline transition hover:font-semibold hover:text-blue-600 md:no-underline md:hover:underline">Struktur Organisasi</a>
+                            </li>
+                            <li>
+                                <a href="berita.html" class="underline transition hover:font-semibold hover:text-blue-600 md:no-underline md:hover:underline"> Berita</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-5 text-gray-700 md:mt-0 md:w-1/3">
+                        <h3 class="mb-3 text-lg font-bold text-gray-900">Alamat Sekretariat</h3>
+                        <p class="text-sm leading-6">Jl. Raya Leces No.A3, Kolla, Leces, Kec. Leces, Kabupaten Probolinggo, Jawa Timur 67273</p>
+
+                        <div class="mt-4 space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <div class="flex h-10 items-center justify-center rounded-full bg-blue-700 p-3 text-white">
+                                    <i class="bi bi-globe"></i>
+                                </div>
+                                <p class="text-sm"><strong>Website:</strong> <a href="#" class="hover:font-semibold hover:text-blue-600 hover:underline">www.pmiiatp.or.id</a></p>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="flex h-10 items-center justify-center rounded-full bg-blue-700 p-3 text-white">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                </div>
+                                <p class="text-sm"><strong>Email:</strong> <a href="mailto:pmiiatp@gmail.com" class="hover:font-semibold hover:text-blue-600 hover:underline">pmiiatp@gmail.com</a></p>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="flex h-10 items-center justify-center rounded-full bg-blue-700 p-3 text-white">
+                                    <i class="bi bi-whatsapp"></i>
+                                </div>
+                                <p class="text-sm"><strong>whatsapp:</strong> <a href="https://wa.me/+6283853960534" class="hover:font-semibold hover:text-blue-600 hover:underline">+62857-5566-4885</a></p>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="flex h-10 items-center justify-center rounded-full bg-blue-700 p-3 text-white">
+                                    <i class="bi bi-instagram"></i>
+                                </div>
+                                <p class="text-sm"><strong>Instagram:</strong> <a href="https://www.instagram.com/pk_pmii_atp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="hover:font-semibold hover:text-blue-600 hover:underline">@pk_pmii_atp</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+                <span class="block text-center text-sm text-gray-500">
+                    ©
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    PK PMII ATP | All Rights Reserved.</span
+                >
+            </div>
+        </footer>
+
+        <div class="loading-screen">
+            <div></div>
+        </div>
+
+        <button id="toTopBtn" class="invisible fixed right-6 bottom-6 h-10 w-10 cursor-pointer rounded-full bg-blue-700 text-white opacity-0 shadow-lg transition-opacity hover:bg-blue-800">
+            <i class="bi bi-arrow-up-circle text-xl text-gray-200"></i>
+        </button>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+        <script src="src/js/main.js"></script>
+    </body>
+</html>
